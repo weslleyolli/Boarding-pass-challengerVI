@@ -1,0 +1,62 @@
+:root {
+    --body-background: linear-gradient(180deg, #8257E5 0%, #271A45 100%);
+    --white: #ffffff; 
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: var(--body-background);
+    height: 100vh;
+    width: 100vw;
+
+    display: grid;
+    place-items: center;
+
+    font-family: "Rubik";
+}
+
+#app {
+    height: 656px;
+    width: 327px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap:20px ;
+
+}
+
+#title-items {
+    color: var(--white);
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.container-ticket {
+    background-color: var(--white);
+    height: 544px;
+    width: 327px;
+    border-radius: 24px;
+    padding: 24px 32px;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+}
+
+p {
+    font-size: 14px;
+    font-weight: 400;
+}
+
+#footer-items {
+    color: var(--white);
+    font-size: 14px;
+    font-weight: 400;
+    opacity: 0.64;
+}
