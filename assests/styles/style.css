@@ -1,6 +1,8 @@
 :root {
     --body-background: linear-gradient(180deg, #8257E5 0%, #271A45 100%);
     --white: #ffffff; 
+
+    font-size: 62.5%;
 }
 
 * {
@@ -18,9 +20,36 @@ body {
 
     display: grid;
     place-items: center;
-
-    font-family: "Rubik";
+    
+    font-size: 1.6rem;
+    font-family: "Rubik", sans-serif;
+    letter-spacing: -0.02em;
 }
+
+h1,
+strong {
+  font-weight: 500;
+}
+
+h1 {
+    font-size: 2rem;
+    line-height: 2.4rem;
+    color: white;
+    text-align: center;
+}
+
+p {
+    color: rgba(0, 0, 0, 0.64);
+    font-size: 1.4rem;
+    line-height: 1.7rem;
+}
+
+strong {
+    font-size: 1.6rem;
+    line-height: 1.9rem;
+    color: rgba(0, 0, 0, 0.88);
+}
+
 
 #app {
     height: 656px;
@@ -45,11 +74,6 @@ body {
     border-radius: 24px;
 }
 
-p {
-    font-size: 14px;
-    font-weight: 400;
-}
-
 .top {
     padding: 0 32px;
     border-bottom: 1px dashed var(--body-background);
@@ -59,6 +83,17 @@ p {
     --mask: radial-gradient(1.2rem at 1.2rem bottom, #0000 93%, black) -1.2rem;
     -webkit-mask-repeat: repeat-x;
     mask-repeat: repeat-x;
+}
+
+.departure,
+.arrival {
+  width: 12.5rem;
+}
+
+.departure strong,
+.arrival strong {
+  font-size: 4rem;
+  line-height: 4.7rem;
 }
 
 .container-header {
@@ -88,6 +123,7 @@ p {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    width: 255px;
 }
 
 .container-locale h1 {
@@ -244,11 +280,9 @@ p {
 }
 
 
-#footer-items {
+footer {
     color: var(--white);
-    font-size: 14px;
-    font-weight: 400;
-    opacity: 0.64;
+    text-align: center;
 }
 
 @media (max-width: 720px) {
