@@ -195,11 +195,6 @@ strong {
     font-size: 16px;
 }
 
-.balls {
-    width: 1px;
-
-}
-
 .balls-one {
     height: 25px;
     width: 25px;
@@ -286,7 +281,25 @@ footer {
 }
 
 @media (max-width: 720px) {
+.container-ticket {
+    background-color: transparent;
+}
+
+    .balls {
+        display: none;
+    }
+
     .top {
-        border-radius: 20px;
+        border-radius: 10% 10% 10% 10%;
+        background-color: var(--white);
+    }
+    .middle {
+        border-radius: 20px 20px 20px 20px;
+        background-color: var(--white);
+    }
+    .bottom {
+        border-radius: 10% 10% 10% 10%;
+        background-color: var(--white);
+        padding-bottom: 30px;
     }
 }
