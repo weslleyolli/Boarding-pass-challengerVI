@@ -131,53 +131,19 @@ p {
 }
 
 .middle {
+    display: flex;
     padding: 0 32px;
     border: 1px dashed rgba(0, 0, 0, 0.32);
     border-left: 0;
     border-right: 0;
-  
+    position: relative;
     --mask: radial-gradient(1.2rem at 1.2rem 1.2rem, #0000 93%, black) -1.2rem -1.2rem;
 
 
 }
 
-.balls-one {
-    height: 25px;
-    width: 25px;
-    background: #613eb3;
-    border-radius: 50px;
-    position: absolute;
-    left: 49rem;
-    top: 22.8rem;
-}
-.balls-two {
-    height: 25px;
-    width: 25px;
-    background: #54359c;
-    border-radius: 50px;
-    position: absolute;
-    left: 49rem;
-    top: 28.1rem;
-}
-.balls-three {
-    height: 25px;
-    width: 25px;
-    background: #623fb4;
-    border-radius: 50px;
-    position: absolute;
-    right: 49rem;
-    top: 22.8rem;
-}
-.balls-four {
-    height: 25px;
-    width: 25px;
-    background: #54359c;
-    border-radius: 50px;
-    position: absolute;
-    right: 49rem;
-    top: 28.1rem;
-}
 .container-info {
+    width: 260px;
     display: grid;
     padding: 24px 0;
     gap: 24px;
@@ -191,6 +157,51 @@ p {
 .container-info-items h2 {
     font-weight: 500;
     font-size: 16px;
+}
+
+.balls {
+    width: 1px;
+
+}
+
+.balls-one {
+    height: 25px;
+    width: 25px;
+    background: #613eb3;
+    border-radius: 50px;
+    position: absolute;
+    top: -13px;
+    left: -14px;
+
+}
+.balls-two {
+    height: 25px;
+    width: 25px;
+    background: #54359c;
+    border-radius: 50px;
+    position: absolute;
+    bottom: -13px;
+    left: -14px;
+}
+.balls-three {
+    height: 25px;
+    width: 25px;
+    background: #623fb4;
+    border-radius: 50px;
+    position: absolute;
+    top: -13px;
+    right: -14px;
+    
+}
+.balls-four {
+    height: 25px;
+    width: 25px;
+    background: #54359c;
+    border-radius: 50px;
+    position: absolute;
+    bottom: -13px;
+    right: -14px;
+
 }
 
 .bottom {
